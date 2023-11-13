@@ -1,0 +1,13 @@
+h1 {
+  color: red;
+  font-size: 1em;
+}
+
+h2 {
+  color: green;
+}
+
+a {
+  color: cyan;
+  font-weight: bold;
+}
