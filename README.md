@@ -4,12 +4,13 @@ Curso de _introducción_ al **desarrollo** web con `HTML`, `CSS` y `JavaScript`.
 
 ### Ejecución
 
-```terminal	
+```bash
+# clonar el repositorio
+git clone https://github.com/TrainingITCourses/leda_web.git
 # instalación de dependencias
 npm install
-
-# Ejecución directa
-npx http-server
+# ejecución en modo desarrollo
+npm start
 ```
 
 ## Autor
