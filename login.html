@@ -15,12 +15,15 @@
     </header>
    
     <form method="post" >
-      <label for="nombre"> Tu nombre:  </label>
-      <input type="text" id="nombre" name="nombre" placeholder="dime tu nombre">
-      <label for="email"> Tu dirección de correo:  </label>
-      <input type="email" id="email" name="direccion-email" placeholder="estribe tu email">
-      <label for="contraseña"> Tu contraseña:  </label>
-      <input type="password" id="contraseña" name="contraseña" placeholder="y aquí tu password">
+      <fieldset>
+        <legend>Identificación</legend>
+        <label for="nombre"> Tu nombre:  </label>
+        <input type="text" id="nombre" name="nombre" placeholder="dime tu nombre">
+        <label for="email"> Tu dirección de correo:  </label>
+        <input type="email" id="email" name="direccion-email" placeholder="estribe tu email">
+        <label for="contraseña"> Tu contraseña:  </label>
+        <input type="password" id="contraseña" name="contraseña" placeholder="y aquí tu password">
+      </fieldset>
       <input type="submit" value="Registrar">
       <button type="reset">Borrar</button>
     </form>
