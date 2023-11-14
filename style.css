@@ -1,27 +1,46 @@
 h1 {
-  color: red;
   font-size: 1em;
 }
 
 h2 {
-  color: green;
+  color: #0783d8
 }
 
 a {
-  color: grey;
-  font-weight: bold;
+  color: #47d469;
+}
+
+header {
+  background-color: #0e4d90;
+  color: white;
+  padding: 10px;
 }
 
 #autor {
-  color: blue;
+  color: #33c1ee;
+  font-size: 0.8em;
 }
 
-.herramienta {
-  color: brown;
+.destino {
+  color: #0783d8;
 }
 
 input {
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #47d469;
+  color: white;
+}
+
+button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #0e4d90;
+  color: white;
 }
