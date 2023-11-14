@@ -1,0 +1,31 @@
+{
+  "name": "leda_web",
+  "version": "1.0.0",
+  "description": "mi primer proyecto web",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TrainingITCourses/leda_web.git"
+  },
+  "keywords": [
+    "curso",
+    "leda",
+    "web"
+  ],
+  "author": "Alberto Basalo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TrainingITCourses/leda_web/issues"
+  },
+  "homepage": "https://github.com/TrainingITCourses/leda_web#readme",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "prettier": "^3.1.0"
+  }
+}
