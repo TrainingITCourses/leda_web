@@ -1,5 +1,9 @@
 # Led Web
 
-Curso de introducción al desarrollo web con HTML, CSS y JavaScript.
+Curso de _introducción_ al **desarrollo** web con `HTML`, `CSS` y `JavaScript`.
 
-Por Alberto Basalo (@albertobasalo) 
+
+## Autor
+
+Por [Alberto Basalo](https://albertobasalo.dev) [@albertobasalo](https://twitter.com/albertobasalo) 
+  
