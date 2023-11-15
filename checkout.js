@@ -1,25 +1,27 @@
 // destino
-var ciudad = "";
-var iata = "";
+let ciudad = "";
+let iata = "";
 // Precios
-var precioBillete = 0;
-var precioNoche = 0;
+let precioBillete = 0;
+let precioNoche = 0;
 
 
 function calcularPrecio() {
   // Obtener valores ingresados por el usuario
-  var numPasajeros = parseInt(document.getElementById("pasajeros").value, 10);
-  var numNoches = parseInt(document.getElementById("noches").value, 10);
+  const numPasajeros = parseInt(document.getElementById("pasajeros").value, 10);
+  const numNoches = parseInt(document.getElementById("noches").value, 10);
 
   // Calcular el precio total
-  var precioTotal = precioBillete * numPasajeros + precioNoche * numNoches;
+  const billetes = precioBillete * numPasajeros;
+  const noches = precioNoche * numNoches;
+  const precioTotal = billetes + noches;
 
   // Mostrar el resultado
   document.getElementById("precioTotal").textContent = "Precio Total: " + precioTotal + "€";
 }
 
-function mostrarInformacionDestino() {
-  var urlParams = new URLSearchParams(window.location.search);
+function mostrarDestino() {
+  const urlParams = new URLSearchParams(window.location.search);
   // Obtener valores de la URL
   ciudad = urlParams.get("c");
   iata = urlParams.get("i");
@@ -33,4 +35,4 @@ function mostrarInformacionDestino() {
 }
 
 // Llama a la función al cargar la página
-window.onload = mostrarInformacionDestino;
+window.onload = mostrarDestino;

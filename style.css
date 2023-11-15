@@ -21,10 +21,6 @@ header {
   font-size: 0.8em;
 }
 
-.destino {
-  color: #0783d8;
-}
-
 input {
   display: block;
   margin-top: 5px;
@@ -48,4 +44,21 @@ button {
   margin-bottom: 10px;
   background-color: #0e4d90;
   color: white;
+}
+
+.destino {
+  color: #0783d8;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.precio {
+  color: #0e4d90;
+  font-style: italic;
+}
+
+#precioBillete, #precioNoche {
+  color: #0e4d90;
+  font-style: italic;
+  font-size: 1.2em;
 }
