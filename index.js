@@ -1,21 +1,44 @@
-console.log('Hola Mundo!');
+function calcularPrecioConIva(cantidad, precioUnitario) {
+  let iva = 21;
+  let base = cantidad * precioUnitario;
+  let impuesto = base * iva / 100;
+  let precio = base + impuesto;
+  return precio;
+}
 
-// Variables
+console.log('Hola Mundo!');
+let ahorros = 6000;
+
 let nombre = 'Alberto';
-console.log(nombre);
+console.log(`${nombre} tiene ahorrados ${ahorros} euros.`);
 
 let precioBillete = 1000;
-console.log("Precio por billete: " + precioBillete + " euros");
-let billetes = 5;
-console.log(`Billetes: ${billetes}`);
-let precioTotal = precioBillete * billetes;
+console.log("Precio por billete: " + precioBillete * (1.21) + " euros");
 
-let ahorros = 5000;
+let billetes = 3;
+console.log(`Billetes: ${billetes}`);
+
+let precioBilletes = calcularPrecioConIva(billetes, precioBillete);
+console.log("Precio billetes", precioBilletes);
+
+let precioNoche = 300;
+console.log("Precio noche", precioNoche * 1.21);
+let noches = 6;
+console.log(`Noches ${noches}`);
+let precioNoches = calcularPrecioConIva(noches, precioNoche);
+console.log("Precio noches", precioNoches);
+
+let precioTotal = precioBilletes + precioNoches;
+console.log(`Precio total ${precioTotal}`);
 
 if (ahorros >= precioTotal) { 
   console.log("Compro los billetes");
   for (let i = 0; i < billetes; i++){
     console.log("Emitiendo billete " + (i + 1));
+  }
+  console.log("Compro las estancias");
+  for (let i = 0; i < noches; i++){
+    console.log("Emitiendo voucher " + (i + 1 ))
   }
 } else {
   console.log("No tengo dinero suficiente");
