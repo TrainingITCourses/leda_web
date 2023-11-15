@@ -8,6 +8,7 @@ Curso de _introducción_ al **desarrollo** web con `HTML`, `CSS` y `JavaScript`.
 # clonar el repositorio
 git clone https://github.com/TrainingITCourses/leda_web.git
 # instalación de dependencias
+cd leda_web
 npm install
 # ejecución en modo desarrollo
 npm start
