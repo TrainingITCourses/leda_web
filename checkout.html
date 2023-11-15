@@ -1,0 +1,45 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Identificación de entrada</title>
+    <meta name="author" content="Alberto Basalo" />
+    <meta name="description" content="Página de login" />
+    <meta name="keywords" content="login, auth" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Compra de billetes y noches de hotel.</h1>
+      <a href="./index.html">Portal</a>
+    </header>
+    <section>
+      <h2>
+        Destino:
+        <span id="destino"></span>
+      </h2>
+      <p>
+        Precio del billete:
+        <span id="precioBillete"></span>
+      </p>
+      <p>
+        Precio por noche de hotel:
+        <span id="precioNoche"></span>
+      </p>
+
+      <label for="pasajeros">Número de Pasajeros:</label>
+      <input type="number" id="pasajeros" min="1" value="1" />
+
+      <label for="noches">Número de Noches:</label>
+      <input type="number" id="noches" min="1" value="1" />
+
+      <button onclick="calcularPrecio()">Calcular Precio Total</button>
+
+      <p id="precioTotal">Precio Total: 0€</p>
+    </section>
+    <footer>
+      <a id="autor" href="https://www.albertobasalo.dev/">Alberto Basalo</a>
+    </footer>
+    <script src="./checkout.js"></script>
+  </body>
+</html>
