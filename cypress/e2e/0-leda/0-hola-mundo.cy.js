@@ -15,6 +15,13 @@ describe('The Leda home page', () => {
     cy.get('a').should('contain', 'Identificación');
   });
   it('should have a link to author page', () => { 
-    cy.get('#autor');
+    cy.get('#autor')
+      .should('contain', 'Alberto Basalo')
+      .and('have.attr', 'href', 'https://www.albertobasalo.dev/');
   });
+  it('should navigate to login page', () => { 
+    cy.get('header a').click();
+    cy.url().should('include', 'login.html');
+  });
+
 });
