@@ -36,3 +36,5 @@ function mostrarDestino() {
 
 // Llama a la función al cargar la página
 window.onload = mostrarDestino;
+
+
