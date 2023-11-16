@@ -13,6 +13,8 @@ npm install
 # ejecución en modo desarrollo
 npm start
 ```
+## extensiones
+https://chromewebstore.google.com/detail/cypress-recorder/glcapdcacdfkokcmicllhcjigeodacab?pli=1
 
 ## Autor
 
